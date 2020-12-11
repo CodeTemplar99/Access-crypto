@@ -1,59 +1,81 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- Mirrored from Access-Crypto/?a=rules by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Dec 2020 03:52:32 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
-<title>Access-Crypto</title>
-<link rel="icon" href="styles/images/favicon.png">
-<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href='styles/animate.css' rel='stylesheet' type='text/css'>
-<link href='styles/style.css' rel='stylesheet' type='text/css'>
-<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src='styles/setting2.js' type='text/javascript'></script>
-<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="styles/wow.js"></script>
-<script src="styles/wow.min.js"></script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<script type="text/javascript">
-	var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-	var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
-	
-	function GetClock(){
-	var tzOffset = 0;//set this to the number of hours offset from UTC
-	
-	var d=new Date();
-	var dx=d.toGMTString();
-	dx=dx.substr(0,dx.length -3);
-	d.setTime(Date.parse(dx))
-	d.setHours(d.getHours()+tzOffset);
-	var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
-	var nhour=d.getHours(),nmin=d.getMinutes(),ap;
-	if(nhour==0){ap=" AM";nhour=12;}
-	else if(nhour<12){ap=" AM";}
-	else if(nhour==12){ap=" PM";}
-	else if(nhour>12){ap=" PM";nhour-=12;}
-	
-	if(nmin<=9) nmin="0"+nmin;
-	
-	document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
-	}
-	
-	window.onload=function(){
-	GetClock();
-	setInterval(GetClock,1000);
-	}
-	</script>
+  <title>Home | Access-Crypto</title>
+  <link rel="icon" href="styles/images/favicon.png"><!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='styles/animate.css' rel='stylesheet' type='text/css'>
+  <link href='styles/style.css' rel='stylesheet' type='text/css'>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src='styles/setting2.js' type='text/javascript'></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <script src="styles/wow.js"></script>
+  <script src="styles/wow.min.js"></script>
+
+  <script type="text/javascript">
+    var tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    var tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September",
+      "October", "November", "December");
+
+    function GetClock() {
+      var tzOffset = 0; //set this to the number of hours offset from UTC
+
+      var d = new Date();
+      var dx = d.toGMTString();
+      dx = dx.substr(0, dx.length - 3);
+      d.setTime(Date.parse(dx))
+      d.setHours(d.getHours() + tzOffset);
+      var nday = d.getDay(),
+        nmonth = d.getMonth(),
+        ndate = d.getDate();
+      var nhour = d.getHours(),
+        nmin = d.getMinutes(),
+        ap;
+      if (nhour == 0) {
+        ap = " AM";
+        nhour = 12;
+      } else if (nhour < 12) {
+        ap = " AM";
+      } else if (nhour == 12) {
+        ap = " PM";
+      } else if (nhour > 12) {
+        ap = " PM";
+        nhour -= 12;
+      }
+
+      if (nmin <= 9) nmin = "0" + nmin;
+
+      document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + " " +
+        nhour + ":" + nmin + ap + "";
+    }
+
+    window.onload = function () {
+      GetClock();
+      setInterval(GetClock, 1000);
+    }
+  </script>
 
 
 
-<script src="http://code.jivosite.com/widget/6hv3vvOrJp" async></script>
+  <script src="http://code.jivosite.com/widget/6hv3vvOrJp" async></script>
 </head>
+
 <body>
-<div class="wrapper">
-<div class="headertop">
+  <div class="wrapper">
+    <div class="headertop">
       <div class="content">
         <div class="headertopleft">
           <div class="servertime bounceInDown wow">SERVER TIME: <span id="clockbox"></span></div>
@@ -84,95 +106,109 @@
         </ul>
       </div>
     </div>
-<div class="bannerwrapfullwidth">
-  <div class="content">     
-<h3>Rules & Agreements.</h3>
-<br>
+    <div class="bannerwrapfullwidth">
+      <div class="content">
+        <h3>Rules & Agreements.</h3>
+        <br>
 
-<p align=justify>
+        <p align=justify>
 
-Please read the following rules carefully before signing in.<br><br>
-
-
-
-You agree to be of legal age in your country to partake in this program, and in all the cases your minimal age must be 18 years.<br><br>
-
-Access-Crypto is not available to the general public and is opened only to the qualified members of Access-Crypto, the use of this site is restricted to our members and to individuals personally invited by them. Every deposit is considered to be a private transaction between the Access-Crypto and its Member.<br><br>
-	
-As a private transaction, this program is exempt from the US Securities Act of 1933, the US Securities Exchange Act of 1934 and the US Investment Company Act of 1940 and all other rules, regulations and amendments thereof. We are not FDIC insured. We are not a licensed bank or a security firm.<br><br>
-  You agree that all information, communications, materials coming from Access-Crypto 
-  are unsolicited and must be kept private, confidential and protected from any 
-  disclosure. Moreover, the information, communications and materials contained 
-  herein are not to be regarded as an offer, nor a solicitation for investments 
-  in any jurisdiction which deems non-public offers or solicitations unlawful, 
-  nor to any person to whom it will be unlawful to make such offer or solicitation.<br>
-  <br>
-
-All the data giving by a member to Access-Crypto will be only privately used and not disclosed to any third parties. Access-Crypto is not responsible or liable for any loss of data.<br><br>
-  You agree to hold all principals and members harmless of any liability. You 
-  are investing at your own risk and you agree that a past performance is not 
-  an explicit guarantee for the same future performance. You agree that all information, 
-  communications and materials you will find on this site are intended to be regarded 
-  as an informational and educational matter and not an investment advice.<br>
-  <br>
-  We reserve the right to change the rules, commissions and rates of the program 
-  at any time and at our sole discretion without notice, especially in order to 
-  respect the integrity and security of the members' interests. You agree that 
-  it is your sole responsibility to review the current terms. <br>
-  <br>
-
-Access-Crypto is not responsible or liable for any damages, losses and costs resulting from any violation of the conditions and terms and/or use of our website by a member. You guarantee to Access-Crypto that you will not use this site in any illegal way and you agree to respect your local, national and international laws.<br><br>
-
-Don't post bad vote on Public Forums and at Gold Rating Site without contacting the administrator of our program FIRST. Maybe there was a technical problem with your transaction, so please always CLEAR the thing with the administrator.<br><br>
-
-We will not tolerate SPAM or any type of UCE in this program. SPAM violators will be immediately and permanently removed from the program.<br><br>
-
-Access-Crypto reserves the right to accept or decline any member for membership without explanation.<br><br>
-
-If you do not agree with the above disclaimer, please do not go any further.
+          Please read the following rules carefully before signing in.<br><br>
 
 
 
-</p>
-              </div>
-            </div>
-          </div>
-<div class="footerwrap">
-  <div class="content">
-    <div class="footercolumn one">
-      <p><img style="max-width: 220px;" src="styles/images/logo.png" alt="" /></p>
-      <p>&copy; 2020-2024. Access-Crypto. All Rights Reserved</p>
-    </div>
-    <div class="footercolumn two">
-      <ul>
-        <li><a href="index3898.html?a=cust&amp;page=about">ABOUT US</a></li>
-        <li><a href="indexa972.html?a=rules">RULES</a></li>
-        <li><a href="index38cd.html?a=faq">FAQ</a></li>
-      </ul>
-      <ul>
-        <li><a href="index8aa0.html?a=cust&amp;page=howto">get started</a></li>
-        <li><a href="index7d14.html?a=cust&amp;page=rating">Ratings</a></li>
-        <li><a href="index15a0.html?a=support">support</a></li>
-      </ul>
-    </div>
+          You agree to be of legal age in your country to partake in this program, and in all the cases your minimal age
+          must be 18 years.<br><br>
 
-    <div class="footercolumn four">
-      <h4>support@glabalcrypto.uk</h4>
-      <div class="footersocial"><span><img src="styles/images/pp1.png" alt="" /></a></span>
-      <span><img src="styles/images/pp2.png" alt="" /></a></span>
-      <span><img src="styles/images/pp3.png" alt="" /></a></span>
-      <span><img src="styles/images/pp4.png" alt="" /></a></span>
-      <span><img src="styles/images/pp5.png" alt="" /></a></span>
-      <span><img src="styles/images/pp6.png" alt="" /></a></span>
-      
-      
+          Access-Crypto is not available to the general public and is opened only to the qualified members of
+          Access-Crypto, the use of this site is restricted to our members and to individuals personally invited by
+          them. Every deposit is considered to be a private transaction between the Access-Crypto and its
+          Member.<br><br>
+
+          As a private transaction, this program is exempt from the US Securities Act of 1933, the US Securities
+          Exchange Act of 1934 and the US Investment Company Act of 1940 and all other rules, regulations and amendments
+          thereof. We are not FDIC insured. We are not a licensed bank or a security firm.<br><br>
+          You agree that all information, communications, materials coming from Access-Crypto
+          are unsolicited and must be kept private, confidential and protected from any
+          disclosure. Moreover, the information, communications and materials contained
+          herein are not to be regarded as an offer, nor a solicitation for investments
+          in any jurisdiction which deems non-public offers or solicitations unlawful,
+          nor to any person to whom it will be unlawful to make such offer or solicitation.<br>
+          <br>
+
+          All the data giving by a member to Access-Crypto will be only privately used and not disclosed to any third
+          parties. Access-Crypto is not responsible or liable for any loss of data.<br><br>
+          You agree to hold all principals and members harmless of any liability. You
+          are investing at your own risk and you agree that a past performance is not
+          an explicit guarantee for the same future performance. You agree that all information,
+          communications and materials you will find on this site are intended to be regarded
+          as an informational and educational matter and not an investment advice.<br>
+          <br>
+          We reserve the right to change the rules, commissions and rates of the program
+          at any time and at our sole discretion without notice, especially in order to
+          respect the integrity and security of the members' interests. You agree that
+          it is your sole responsibility to review the current terms. <br>
+          <br>
+
+          Access-Crypto is not responsible or liable for any damages, losses and costs resulting from any violation of
+          the conditions and terms and/or use of our website by a member. You guarantee to Access-Crypto that you will
+          not use this site in any illegal way and you agree to respect your local, national and international
+          laws.<br><br>
+
+          Don't post bad vote on Public Forums and at Gold Rating Site without contacting the administrator of our
+          program FIRST. Maybe there was a technical problem with your transaction, so please always CLEAR the thing
+          with the administrator.<br><br>
+
+          We will not tolerate SPAM or any type of UCE in this program. SPAM violators will be immediately and
+          permanently removed from the program.<br><br>
+
+          Access-Crypto reserves the right to accept or decline any member for membership without explanation.<br><br>
+
+          If you do not agree with the above disclaimer, please do not go any further.
+
+
+
+        </p>
       </div>
-      
-      
-     </div>
+    </div>
   </div>
-</div>
-</div>
+  <div class="footerwrap">
+    <div class="content">
+      <div class="footercolumn one">
+        <p><img style="max-width: 220px;" src="styles/images/logo.png" alt="" /></p>
+        <p>&copy; 2020-2024. Access-Crypto. All Rights Reserved</p>
+      </div>
+      <div class="footercolumn two">
+        <ul>
+          <li><a href="index3898.html?a=cust&amp;page=about">ABOUT US</a></li>
+          <li><a href="indexa972.html?a=rules">RULES</a></li>
+          <li><a href="index38cd.html?a=faq">FAQ</a></li>
+        </ul>
+        <ul>
+          <li><a href="index8aa0.html?a=cust&amp;page=howto">get started</a></li>
+          <li><a href="index7d14.html?a=cust&amp;page=rating">Ratings</a></li>
+          <li><a href="index15a0.html?a=support">support</a></li>
+        </ul>
+      </div>
+
+      <div class="footercolumn four">
+        <h4>support@glabalcrypto.uk</h4>
+        <div class="footersocial"><span><img src="styles/images/pp1.png" alt="" /></a></span>
+          <span><img src="styles/images/pp2.png" alt="" /></a></span>
+          <span><img src="styles/images/pp3.png" alt="" /></a></span>
+          <span><img src="styles/images/pp4.png" alt="" /></a></span>
+          <span><img src="styles/images/pp5.png" alt="" /></a></span>
+          <span><img src="styles/images/pp6.png" alt="" /></a></span>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
 <!-- Mirrored from Access-Crypto/?a=rules by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Dec 2020 03:52:32 GMT -->
+
 </html>
