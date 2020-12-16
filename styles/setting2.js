@@ -25,135 +25,76 @@ $(document).ready(function(){
 	function calc(){
 		var money = parseFloat($("#money").val());
 		switch (percent) {
-		    case 0:
-		        if( (money >= 10 && money < 500)){
-		        	var profitDaily = money / 100 * 147;
+			case 0:
+				if ((money >= 20 && money < 150)) {
+					var profitDaily = money / 100 * 120;
 					var profitDaily = profitDaily.toFixed(2);
 
 				
 
 					$("#profitDaily").text(profitDaily);
-		        } if (money < 10){
+				} if (money < 10) {
 					$("#profitDaily").text("Error!");
 				}
-		        break;
+				break;
 			case 1:
-		        if( (money >= 501 && money < 1000)){
-		        	var profitDaily = money / 100 * 168;
+				if ((money >= 150 && money < 1000)) {
+					var profitDaily = money / 100 * 150;
 					var profitDaily = profitDaily.toFixed(2);
 
 
 					$("#profitDaily").text(profitDaily);
-		        } if (money < 501){
+				} if (money < 149) {
 					$("#profitDaily").text("Error!");
 				}
-		        break;
-		    case 2:
-		    	if( (money >= 1001 && money < 3000)){
-		        	var profitDaily = money / 100 * 189;
+				break;
+			case 2:
+				if ((money >= 1000 && money < 5000)) {
+					var profitDaily = money / 100 * 300;
 					var profitDaily = profitDaily.toFixed(2);
 
 				
 
 					$("#profitDaily").text(profitDaily);
-		        } if (money < 1001){
+				} if (money < 1000) {
 					$("#profitDaily").text("Error!");
 				}
-		        break;
-		    case 3:
-		    	if( (money >= 3001 && money < 3000)){
-		        	var profitDaily = money / 100 * 210;
+				break;
+			case 3:
+				if ((money >= 5000 && money < 1000000000000)) {
+					var profitDaily = money / 100 * 400;
 					var profitDaily = profitDaily.toFixed(2);
 
 				
 
 					$("#profitDaily").text(profitDaily);
-		        } if (money < 3001){
+				} if (money < 5000) {
 					$("#profitDaily").text("Error!");
 				}
-		        break;
-		    case 4:
-		    	if( (money >= 20 && money < 500)){
-		        	var profitDaily = money / 100 * 300;
+				break;
+			case 4:
+				if ((money >= 20 && money < 150)) {
+					var profitDaily = money / 100 * 120;
 					var profitDaily = profitDaily.toFixed(2);
 
 					$("#profitDaily").text(profitDaily);
-		        } if (money >= 501 && money < 1000) {
-		        	var profitDaily = money / 100 * 600;
+				} if (money >= 150 && money < 1000) {
+					var profitDaily = money / 100 * 150;
 					var profitDaily = profitDaily.toFixed(2);
 
 					$("#profitDaily").text(profitDaily);
-		        } if (money >= 1001 && money < 5000) {
-		        	var profitDaily = money / 100 * 900;
+				} if (money >= 1000 && money < 5000) {
+					var profitDaily = money / 100 * 300;
 					var profitDaily = profitDaily.toFixed(2);
 
 					$("#profitDaily").text(profitDaily);
-		        } if (money >= 5001 && money < 10000) {
-		        	var profitDaily = money / 100 * 1200;
+				} if (money >= 5000 && money < 1000000000000) {
+					var profitDaily = money / 100 * 400;
 					var profitDaily = profitDaily.toFixed(2);
-
-					$("#profitDaily").text(profitDaily);
-		        } if (money >= 10001 && money < 100000) {
-		        	var profitDaily = money / 100 * 1400;
-					var profitDaily = profitDaily.toFixed(2);
-
-					$("#profitDaily").text(profitDaily);
-		        } if (money < 20){
-					$("#profitDaily").text("Error!");
 				}
-		        break;
-		    case 5:
-				if( (money >= 5000  && money < 25000)){
-		        	var profitDaily = money / 100 *  300;
-					var profitDaily = profitDaily.toFixed(2);
-					
-					$("#profitDaily").text(profitDaily);	
-				}	
-				if( (money >= 25001  && money < 50000)){
-		        	var profitDaily = money / 100 *  600;
-					var profitDaily = profitDaily.toFixed(2);
-
-					$("#profitDaily").text(profitDaily);
-		        } if (money < 5000){
-					$("#profitDaily").text("Error!");
-				}
-		        break;
-		    case 6:
-		    if( (money >= 500  && money < 5000)){
-		        	var profitDaily = money / 100 *  750;
-					var profitDaily = profitDaily.toFixed(2);
-
-					$("#profitDaily").text(profitDaily);
-					
-				}
-				if( (money >= 5001  && money < 10000)){
-		        	var profitDaily = money / 100 *  1500;
-					var profitDaily = profitDaily.toFixed(2);
-
-					$("#profitDaily").text(profitDaily);	
-					
-		        } if (money < 500){
-					$("#profitDaily").text("Error!");
-				}
-		        break;
-		    case 7:
-		    	if( (money >= 100 && money < 1000 )){
-		        	var profitDaily = money / 100 *  1200;
-					var profitDaily = profitDaily.toFixed(2);
-
-					$("#profitDaily").text(profitDaily);
-					
-				}	
-				if( (money >= 1001 && money < 10000 )){
-		        	var profitDaily = money / 100 *  2000;
-					var profitDaily = profitDaily.toFixed(2);
-
-					$("#profitDaily").text(profitDaily);	
-					
-		        } if (money < 100){
-					$("#profitDaily").text("Error!");
-				}
-		        break;
+				break;
+			case 5:
+	
 		}
 	}
 	if($("#money").length){
