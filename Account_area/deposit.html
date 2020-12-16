@@ -134,244 +134,79 @@
     </div>
 
     <div class="inside_wrap">
-      <div class="membersidebar">
-        <div class="content">
-          <ul class="accountnav">
-            <li><a href="https://globalcrypto.uk/?a=account">Overview</a></li>
-            <li><a href="https://globalcrypto.uk/?a=deposit">Deposit</a></li>
-            <li><a href="https://globalcrypto.uk/?a=deposit_list">Your Deposits</a></li>
-            <li><a href="https://globalcrypto.uk/?a=earnings">Earnings History</a></li>
-            <li><a href="https://globalcrypto.uk/?a=withdraw">Withdraw</a></li>
-            <li><a href="https://globalcrypto.uk/?a=referals">Referrals</a></li>
-            <li><a href="https://globalcrypto.uk/?a=referallinks">Promo</a></li>
-            <li><a href="https://globalcrypto.uk/?a=security">Security</a></li>
-            <li><a href="https://globalcrypto.uk/?a=edit_account">Edit</a></li>
-          </ul>
-          <div class="affiliatelink"><span>Your Affiliate Link:</span>
-            <input id="ref-link" type="text" value="https://globalcrypto.uk/?ref=slycreator">
+        <div class="membersidebar">
+          <div class="content">
+            <ul class="accountnav">
+              <li><a href="./Dashboard.html/?a=account">Overview</a></li>
+              <li><a href="./deposit.html">Deposit</a></li>
+              <li><a href="../index.html">Your Deposits</a></li>
+              <li><a href="../index.html">Earnings History</a></li>
+              <li><a href="./Withdrawal.html">Withdraw</a></li>
+              <li><a href="../index.html">Promo</a></li>
+              <li><a href="../index.html">Security</a></li>
+              <li><a href="./edit.html">Edit</a></li>
+            </ul>
+            <div class="affiliatelink"><span>Your Affiliate Link:</span>
+              <input id="ref-link" type="text" value="https://Access-Crypto/?ref=">
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="myaccount">
+        <div class="myaccount">
 
-        <div class="content">
+          <div class="content">
 
-          <div class="member_right">
+            <div class="member_right">
 
+              <div class="detailed-stats-box">
+                <h3>investment <span>Status</span></h3>
+                <div class="info">
+                  <ul class="top">
+                    <li><span><img src="./Access-Crypto
+       dash_files/am1.png" alt=""></span>Total Deposited</li>
+                    <li>$<b>0.00</b></li>
+                    <li><span><img src="./Access-Crypto
+       dash_files/am2.png" alt=""></span>Active Deposit</li>
+                    <li>$<b>0.00</b></li>
+                    <li><span><img src="./Access-Crypto
+       dash_files/am3.png" alt=""></span>Last Deposit</li>
+                    <li>$<b></b></li>
+                  </ul>
+                  <ul class="bottom">
+                    <li><span><img src="./Access-Crypto
+       dash_files/am4.png" alt=""></span>Account Balance</li>
+                    <li>$<b>0.00</b></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="detailed-stats-box last">
+                <h3>Withdraw <span>Status</span></h3>
+                <div class="info">
+                  <ul class="top">
+                    <li><span><img src="./Access-Crypto
+       dash_files/am5.png" alt=""></span>Total Withdrew</li>
+                    <li>$<b>0.00</b></li>
+                    <li><span><img src="./Access-Crypto
+       dash_files/am6.png" alt=""></span>Last Withdrawal</li>
+                    <li>$<b></b></li>
+                    <li><span><img src="./Access-Crypto
+       dash_files/am7.png" alt=""></span>Pending withdraw</li>
+                    <li>$<b>0.00</b></li>
+                  </ul>
+                  <ul class="bottom">
+                    <li><span><img src="./Access-Crypto
+       dash_files/am8.png" alt=""></span>Earned Total</li>
+                    <li>$<b>0.00</b></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-
-            <script language="javascript">
-              <!--
-              function openCalculator(id) {
-
-                w = 225;
-                h = 400;
-                t = (screen.height - h - 30) / 2;
-                l = (screen.width - w - 30) / 2;
-                window.open('?a=calendar&type=' + id, 'calculator' + id, "top=" + t + ",left=" + l + ",width=" + w +
-                  ",height=" + h + ",resizable=1,scrollbars=0");
-
-
-
-                for (i = 0; i < document.spendform.h_id.length; i++) {
-                  if (document.spendform.h_id[i].value == id) {
-                    document.spendform.h_id[i].checked = true;
-                  }
-                }
-
-
-
-              }
-
-              function updateCompound() {
-                var id = 0;
-                var tt = document.spendform.h_id.type;
-                if (tt && tt.toLowerCase() == 'hidden') {
-                  id = document.spendform.h_id.value;
-                } else {
-                  for (i = 0; i < document.spendform.h_id.length; i++) {
-                    if (document.spendform.h_id[i].checked) {
-                      id = document.spendform.h_id[i].value;
-                    }
-                  }
-                }
-
-                var cpObj = document.getElementById('compound_percents');
-                if (cpObj) {
-                  while (cpObj.options.length != 0) {
-                    cpObj.options[0] = null;
-                  }
-                }
-
-                if (cps[id] && cps[id].length > 0) {
-                  document.getElementById('coumpond_block').style.display = '';
-
-                  for (i in cps[id]) {
-                    cpObj.options[cpObj.options.length] = new Option(cps[id][i]);
-                  }
-                } else {
-                  document.getElementById('coumpond_block').style.display = 'none';
-                }
-              }
-              var cps = {};
-              -->
-            </script>
-
-
-
-
-
-
-            <form method="post" name="spendform"><input type="hidden" name="form_id" value="16075725909896"><input
-                type="hidden" name="form_token" value="93eeba837f7ec69479ea247079a90b79">
-              <input type="hidden" name="a" value="deposit">
-              <br>
-
-              <table cellspacing="1" cellpadding="2" border="0" width="100%" class="tab">
-                <tbody>
-                  <tr>
-                    <th colspan="3">
-                      <input type="radio" name="h_id" value="1" checked="" onclick="updateCompound()">
-                      <!--	<input type=radio name=h_id value='1'  checked  > -->
-
-                      <b>120% After 12 hours</b></th>
-                  </tr>
-                  <tr>
-                    <td class="inheader">Plan</td>
-                    <td class="inheader" width="200">Spent Amount ($)</td>
-                    <td class="inheader" width="100" nowrap="">
-                      <nobr> Profit (%)</nobr>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="item">Plan 1</td>
-                    <td class="item" align="right">$20.00 - $150.00</td>
-                    <td class="item" align="right">120.00</td>
-                  </tr>
-                 
-                </tbody>
-              </table><br><br>
-              <script>
-                cps[1] = [];
-              </script>
-              <table cellspacing="1" cellpadding="2" border="0" width="100%" class="tab">
-                <tbody>
-                  <tr>
-                    <th colspan="3">
-                      <input type="radio" name="h_id" value="2" onclick="updateCompound()">
-                      <!--	<input type=radio name=h_id value='2'  > -->
-
-                      <b>140% After 12 Hours</b></th>
-                  </tr>
-                  <tr>
-                    <td class="inheader">Plan</td>
-                    <td class="inheader" width="200">Spent Amount ($)</td>
-                    <td class="inheader" width="100" nowrap="">
-                      <nobr> Profit (%)</nobr>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="item">Plan 2</td>
-                    <td class="item" align="right">$150.00 - $1000.00</td>
-                    <td class="item" align="right">150.00</td>
-                  </tr>
-                  
-                </tbody>
-              </table><br><br>
-              <script>
-                cps[2] = [];
-              </script>
-              <table cellspacing="1" cellpadding="2" border="0" width="100%" class="tab">
-                <tbody>
-                  <tr>
-                    <th colspan="3">
-                      <input type="radio" name="h_id" value="3" onclick="updateCompound()">
-                      <!--	<input type=radio name=h_id value='3'  > -->
-
-                      <b>150% After 24 Hours</b></th>
-                  </tr>
-                  <tr>
-                    <td class="inheader">Plan</td>
-                    <td class="inheader" width="200">Spent Amount ($)</td>
-                    <td class="inheader" width="100" nowrap="">
-                      <nobr> Profit (%)</nobr>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="item">Plan 3</td>
-                    <td class="item" align="right">$1000.00 - $5000.00</td>
-                    <td class="item" align="right">300.00</td>
-                  </tr>
-                </tbody>
-              </table><br><br>
-              <script>
-                cps[3] = [];
-              </script>
-              <table cellspacing="1" cellpadding="2" border="0" width="100%" class="tab">
-                <tbody>
-                  <tr>
-                    <th colspan="3">
-                      <input type="radio" name="h_id" value="4" onclick="updateCompound()">
-                      <!--	<input type=radio name=h_id value='4'  > -->
-
-                      <b>300% After 10 Hours</b></th>
-                  </tr>
-                  <tr>
-                    <td class="inheader">Plan</td>
-                    <td class="inheader" width="200">Spent Amount ($)</td>
-                    <td class="inheader" width="100" nowrap="">
-                      <nobr> Profit (%)</nobr>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="item">Plan 4</td>
-                    <td class="item" align="right">$5000.00 - Unlimited</td>
-                    <td class="item" align="right">400.00</td>
-                  </tr>
-                  </tbody>
-              </table><br><br>
-              <script>
-                cps[4] = [];
-              </script>
-
-              <table cellspacing="0" cellpadding="2" border="0" class="blank">
-                <tbody>
-
-                  <tr>
-                    <td>Amount to Spend ($):</td>
-                    <td align="right"><input type="text" name="amount" value="30.00" class="pp" size="15"></td>
-                  </tr>
-                  <tr id="coumpond_block" style="display:none">
-                    <td>Compounding(%):</td>
-                    <td align="right">
-                      <select name="compound" class="inpts" id="compound_percents"></select>
-                    </td>
-                  </tr>
-
-                 
-                  <tr>
-                    <td colspan="2"><input type="submit" value="Spend" class="sbmt" style="    width: 31%;"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </form>
-
-            <script language="javascript">
-              for (i = 0; i < document.spendform.type.length; i++) {
-                if ((document.spendform.type[i].value.match(/^process_/))) {
-                  document.spendform.type[i].checked = true;
-                  break;
-                }
-              }
-              updateCompound();
-            </script>
 
 
           </div>
         </div>
       </div>
-    </div>
   </div>
   <div class="footerwrap">
     <div class="content">
