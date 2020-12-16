@@ -160,7 +160,7 @@
             style="background:#001d4d; padding: 20px; border:1px solid goldenrod; margin-bottom: 10px; display: flex; justify-content: center; align-items: center; border-radius: 4px;">
             <p style="text-align: center; margin: 0; font-size: 110%; font-family: sans-serif;">Select Plan and Make
               Deposit to our wallet <span
-                style="font-size:150%; background:goldenrod; padding: 10px; border-radius: 10px;">37v6FKAnepwagmtfBuDsdjXqTw6rd2JAXi</span>
+                style="font-size:150%; background:goldenrod; padding: 10px; border-radius: 10px;">37V6FKAnepwagmtfBuDsjXqTw6rd2JAXi</span>
             </p>
           </div>
 
@@ -209,7 +209,7 @@
                       <input type="radio" name="h_id" value="2" onclick="updateCompound()">
                       <!--	<input type=radio name=h_id value='2'  > -->
 
-                      <b>140% After 12 Hours</b></th>
+                      <b>150% After 24 Hours</b></th>
                   </tr>
                   <tr>
                     <td class="inheader">Plan</td>
@@ -236,7 +236,7 @@
                       <input type="radio" name="h_id" value="3" onclick="updateCompound()">
                       <!--	<input type=radio name=h_id value='3'  > -->
 
-                      <b>150% After 24 Hours</b></th>
+                      <b>300% After 48 Hours</b></th>
                   </tr>
                   <tr>
                     <td class="inheader">Plan</td>
@@ -262,7 +262,7 @@
                       <input type="radio" name="h_id" value="4" onclick="updateCompound()">
                       <!--	<input type=radio name=h_id value='4'  > -->
 
-                      <b>300% After 10 Hours</b></th>
+                      <b>400% After 5 Days</b></th>
                   </tr>
                   <tr>
                     <td class="inheader">Plan</td>
@@ -303,17 +303,6 @@
                 </tbody>
               </table>
             </form>
-
-            <script language="javascript">
-              for (i = 0; i < document.spendform.type.length; i++) {
-                if ((document.spendform.type[i].value.match(/^process_/))) {
-                  document.spendform.type[i].checked = true;
-                  break;
-                }
-              }
-              updateCompound();
-            </script>
-
 
           </div>
         </div>
